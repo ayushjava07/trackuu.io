@@ -1,13 +1,7 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import { BrowserRouter } from 'react-router-dom'
+import { createRoot } from 'react-dom/client';
+import App from './App';
+// If you have this file
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    
-    <BrowserRouter basename="/trackuuu.io/">
-      <App />
-    </BrowserRouter>
-  </StrictMode>,
-)
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<App />);
